@@ -98,7 +98,8 @@ jobs:
         run: |
           rm -rf ./artifact/
           mkdir -p ./artifact/
-          mv ./bin/targets/openwrt* ./artifact/
+          cd ./bin/targets
+          mv openwrt* ../../artifact/
 
       - name: Upload artifact
         uses: actions/upload-artifact@master
