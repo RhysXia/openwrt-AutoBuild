@@ -96,13 +96,10 @@ jobs:
       - name: Assemble artifact
         working-directory: ./openwrt
         run: |
-          rm -rf ./artifact/
-          mkdir -p ./artifact/
-          cd ./bin/targets
-          mv openwrt* ../../artifact/
+          find ./bin/targets/ -type d -name "packages" | xargs rm -rf {}
 
       - name: Upload artifact
         uses: actions/upload-artifact@master
         with:
           name: OpenWrt firmware
-          path: openwrt/artifact/
+          path: openwrt/bin/targets
