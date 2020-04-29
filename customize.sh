@@ -7,4 +7,3 @@ sed -i 's/192.168.1.1/10.10.20.20/g' package/base-files/files/bin/config_generat
 cd package
 mkdir openwrt-packages
 cd openwrt-packages
-git clone --depth 1 https://github.com/Ameykyl/luci-app-koolproxyR
