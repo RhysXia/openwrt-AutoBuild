@@ -9,7 +9,7 @@ mkdir openwrt-packages
 cd openwrt-packages
 
 # ssr包下载
-git clone --depth 1 https://github.com/fw876/helloworld.git
+# git clone --depth 1 https://github.com/fw876/helloworld.git
 # git clone --depth 1 https://github.com/kenzok8/openwrt-packages.git
 
-git clone --depth 1 https://github.com/kenzok8/small.git
+git clone --depth 1 https://github.com/kenzok8/small-package.git
