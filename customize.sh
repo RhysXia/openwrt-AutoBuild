@@ -12,5 +12,4 @@ cd openwrt-packages
 git clone --depth 1 https://github.com/fw876/helloworld.git
 git clone --depth 1 https://github.com/kenzok8/openwrt-packages.git
 
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git
-git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall.git luci-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git luci-passwall
