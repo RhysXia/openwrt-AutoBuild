@@ -104,13 +104,13 @@ jobs:
           cp -rf $(find ./bin/targets/ -type f -name "*.buildinfo" -o -name "*.manifest") ./artifact/buildinfo/
 
       - name: Upload buildinfo
-        uses: actions/upload-artifactt@master
+        uses: actions/upload-artifact@master
         with:
           name: OpenWrt_buildinfo
           path: openwrt/artifact/buildinfo/
 
       - name: Upload package
-        uses: actions/upload-artifactt@master
+        uses: actions/upload-artifact@master
         with:
           name: OpenWrt_package
           path: openwrt/artifact/package/
